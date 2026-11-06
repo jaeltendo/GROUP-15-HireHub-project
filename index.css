@@ -10,3 +10,7 @@ body{
     display:flex;
     padding: 20px;
 }
+.opportunity-card:hover{
+    background-color:cornsilk;
+    border-color:black ;
+}
