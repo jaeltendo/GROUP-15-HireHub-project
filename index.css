@@ -3,11 +3,10 @@ header{
     font-family: sans-serif;
     font-style: oblique;
 }
-
+.site-header{
+    text-align: center;
+}
 body{
     background-color: cornsilk;
     background-attachment: fixed;
-}
-title{
-    color: darkblue;
 }
