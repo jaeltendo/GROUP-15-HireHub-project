@@ -1,61 +1,167 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>For Employers - HireHub</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Employers | HireHub</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<h1>HireHub</h1>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container text-center py-3">
+            <img src="images/logo.jpg" alt="HireHub Logo" class="site-logo">
+            <h1 class="text-light ">HireHub </h1>
+            <p class="text-light">Connecting local talent with opportunities</p>
+        </div>
 
-<a href="index.html">Home</a>
-<a href="opportunities.html">Opportunities</a>
-<a href="employers.html">For Employers</a>
-<a href="register.html">Register</a>
+        <!-- Navigation -->
+        <nav class="navbar justify-content-center">
+            <a class="nav-link text-white mx-2" href="index.html">Home</a>
+            <a class="nav-link text-white mx-2" href="opportunities.html">Opportunities</a>
+            <a class="nav-link text-white mx-2" href="employers.html">For Employers</a>
+            <a class="nav-link text-white mx-2" href="register.html">Register / Apply</a>
+        </nav>
+    </header>
 
-<h2>For Employers Page</h2>
-<p>This page is for employers who want to hire workers.</p>
+    <!-- Main Content -->
+    <main class="container py-5">
 
-<h3>How employers use HireHub</h3>
-<p>First, the employer creates an account. Then the employer posts a job. Job seekers see the job and apply. Last, the employer checks the applications and chooses the best worker.</p>
+<!-- Submit a Vacancy -->
+<section class="my-5">
+    <div class="text-center mb-4">
+        <h2>Submit a Vacancy</h2>
+        <p>Are you looking for someone to join your team? Share your job opportunity with our community.</p>
+    </div>
 
-<h3>Submit a Vacancy Form</h3>
-<p>Fill this form to post a job.</p>
+    <form action="https://formspree.io/f/mnppwpoo" method="POST">
+    <input type="hidden" name="_subject" value="New HireHub Vacancy Submission">
+        <div class="row g-3">
 
-<form>
-<label for="company">Company Name:</label><br>
-<input type="text" id="company" name="company" required><br><br>
+            <div class="col-md-6">
+                <label class="form-label" for="business">Business Name</label>
+                <input type="text" class="form-control" id="business" name="Business" required>
+            </div>
 
-<label for="title">Job Title:</label><br>
-<input type="text" id="title" name="title" required><br><br>
+            <div class="col-md-6">
+                <label class="form-label" for="jobtitle">Job Title</label>
+                <input type="text" class="form-control" id="jobtitle" name="Job Title" required>
+            </div>
 
-<label for="location">Location:</label><br>
-<input type="text" id="location" name="location" required><br><br>
+            <div class="col-md-6">
+                <label class="form-label" for="joblocation">Work Location</label>
+                <input type="text" class="form-control" id="joblocation" name="Location" required>
+            </div>
 
-<label for="salary">Salary:</label><br>
-<input type="text" id="salary" name="salary"><br><br>
+            <div class="col-md-6">
+                <label class="form-label" for="pay">Pay or Pay Range</label>
+                <input type="text" class="form-control" id="pay" name="Pay">
+            </div>
 
-<label for="description">Job Description:</label><br>
-<textarea id="description" name="description" rows="4"></textarea><br><br>
+            <div class="col-12">
+                <label class="form-label" for="duties">Job Duties and Required Skills</label>
+                <textarea class="form-control" id="duties" name="Duties" rows="3" required></textarea>
+            </div>
 
-<label for="requirements">Requirements:</label><br>
-<textarea id="requirements" name="requirements" rows="4"></textarea><br><br>
+            <div class="col-md-6">
+                <label class="form-label" for="hours">Working Hours</label>
+                <input type="text" class="form-control" id="hours" name="Hours">
+            </div>
 
-<input type="submit" value="Submit Vacancy">
-</form>
+            <div class="col-md-6">
+                <label class="form-label" for="contact">Contact Details</label>
+                <input type="text" class="form-control" id="contact" name="Contact" required>
+            </div>
 
-<h3>Information Employers Provide</h3>
-<ul>
-<li>Company name</li>
-<li>Job title</li>
-<li>Location</li>
-<li>Salary</li>
-<li>Job description</li>
-<li>Requirements</li>
-</ul>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Submit Vacancy</button>
+            </div>
 
-<h3>How Employers Find Skilled Workers</h3>
-<p>Employers can check the applications. They can also search for workers by skill. For example, if they need a plumber, they search for plumbers and contact them.</p>
+        </div>
+    </form>
+</section>
+
+
+        <section class="text-center mb-5">
+            <h2>For Employers</h2>
+            <p>
+                HireHub helps employers connect with skilled people within
+                their communities. Find the right people for your jobs and
+                support local talent.
+            </p>
+        </section>
+
+        <section class="container my-5">
+    <div class="text-center mb-4">
+        <h2>Find Skilled Workers</h2>
+        <p>Explore talented people in your community and find the right person for your needs.</p>
+    </div>
+
+    <div class="row g-4">
+
+        <!-- Worker 1 -->
+        <div class="col-md-6 col-lg-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Tailor</h5>
+                    <p class="card-text">Skilled in clothing repairs, alterations and making custom outfits.</p>
+                    <a href="register.html" class="btn btn-primary">Contact Worker</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Worker 2 -->
+        <div class="col-md-6 col-lg-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Graphic Designer</h5>
+                    <p class="card-text">Creates posters, logos, invitations and other designs.</p>
+                    <a href="register.html" class="btn btn-primary">Contact Worker</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Worker 3 -->
+        <div class="col-md-6 col-lg-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Crochet Maker</h5>
+                    <p class="card-text">Makes handmade bags, clothes and accessories.</p>
+                    <a href="register.html" class="btn btn-primary">Contact Worker</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Worker 4 -->
+        <div class="col-md-6 col-lg-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Photographer</h5>
+                    <p class="card-text">Provides photography services for events and special occasions.</p>
+                    <a href="register.html" class="btn btn-primary">Contact Worker</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+        <p>&copy; 2026 HireHub Community. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
