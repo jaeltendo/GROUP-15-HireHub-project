@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create your HireHub profile and start finding local work.">
+    <title>HireHub | Register</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+   
+<header class="bg-primary text-white text-center py-4">
+    <a href="index.html"><img src="images/logo.jpeg"alt="HireHub Logo"style="width: 194px; height: 146px; object-fit: contain;">
+    </a>
+    <h1 class="mt-2">HireHub</h1>
+    <nav class="navbar justify-content-center">
+        <a class="nav-link text-white mx-2" href="index.html">Home</a>
+        <a class="nav-link text-white mx-2" href="opportunities.html">Opportunities</a>
+        <a class="nav-link text-white mx-2" href="employers.html">For Employers</a>
+        <a class="nav-link text-white mx-2" href="Ourteam.html">Our Team</a>
+    </nav>
+
+</header>
+
+    <main class="container py-5">
+        <div class="text-center mb-4">
+            <h2 class="fw-bold">Create Your Profile</h2>
+            <p class="lead">Tell us about yourself so employers in your community can find you.</p>
+        </div>
+
+        <form action="https://formspree.io/f/xaeezrej" method="POST"id="registerForm" class="row g-3 mx-auto"style="max-width: 720px;">
+            <div class="col-md-6">
+                <label for="fullName" class="form-label">Full name</label>
+                            <input type="text" class="form-control" id="fullname"
+                       name="Full name" autocomplete="name" required>
+            </div>
+
+            <div class="col-md-6">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+
+            <div class="col-md-6">
+                <label for="phone" class="form-label">Phone number</label>
+                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" pattern="[0-9+\s]{10,15}" required>
+            </div>
+
+            <div class="col-md-6">
+                <label for="location" class="form-label">Town / District</label>
+                <input type="text" class="form-control" id="location" name="location" required>
+            </div>
+
+            <div class="col-md-6">
+                <label for="experience" class="form-label">Experience level</label>
+                <select class="form-select" id="experience" name="experience" required>
+                    <option value="" selected disabled>Choose...</option>
+                    <option>No experience yet</option>
+                    <option>Less than 1 year</option>
+                    <option>1 to 3 years</option>
+                    <option>More than 3 years</option>
+                </select>
+            </div>
+
+            <div class="col-12">
+                <span class="form-label d-block">Availability</span>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="availability" id="fullTime" value="full-time" required>
+                    <label class="form-check-label" for="fullTime">Full-time</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="availability" id="partTime" value="part-time">
+                    <label class="form-check-label" for="partTime">Part-time</label>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <label for="about" class="form-label">About you</label>
+                <textarea class="form-control" id="about" name="about" rows="4" maxlength="500" placeholder="Briefly describe your skills and what you are looking for."></textarea>
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="terms" required>
+                    <label class="form-check-label" for="terms">
+                        I agree that HireHub may share my profile with employers.
+                    </label>
+                </div>
+            </div>
+
+            <div class="col-12 text-center">
+                <button class="btn btn-primary me-2" type="submit">Submit Profile</button>
+                <button class="btn btn-outline-secondary" type="reset">Clear</button>
+            </div>
+        </form>
+    </main>
+
+    <footer class="bg-dark text-white text-center p-4" id="contact">
+        <h2 class="h5">Contact HireHub</h2>
+        <p>Questions? Reach out to the HireHub team.</p>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

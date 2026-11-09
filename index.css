@@ -18,35 +18,3 @@ body{
     display:flex;
     padding: 20px;
 }
-.logo-circle {
-  width: 50px;
-  height: 50px;
-  background: #1864ff;
-  color: white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 800;
-  font-size: 22px;
-  margin: 0 auto;
-}
-
-.card {
-  background: white;
-  margin-top: 20px;
-}
-.form-label {
-  color: #6b7280;
-  font-weight: 500;
-}
-input.form-control, select.form-select {
-  border-radius: 8px;
-  border: 1px solid #ddd;
-  padding: 10px;
-}
-button.btn-primary {
-  background: #1864ff;
-  border-radius: 8px;
-  font-weight: 600;
-}
