@@ -42,7 +42,7 @@ header{
     font-size: medium;
     font-family: sans-serif;
     font-style: poppins;
-    font: weight 850px;
+    font: weight 900px;
 
 .site-header{
     display:flex;
@@ -70,7 +70,7 @@ header{
   display: flex;
   align-items: center;
   gap: 10px;
-  text-decoration: bold;
+  text-decoration: none;
 }
 .logo-area img {
   width: 38px;
