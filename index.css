@@ -1,7 +1,39 @@
-/* CHANGE ALL HEADINGS AT ONCE */
+
+body {
+  background-image: url('images/pic.avif'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  margin: 0;
+  min-height: 100vh;
+}
+
+
+body::before {
+  content: ""; /* THIS IS REQUIRED - without it, ::before shows nothing */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(255, 255, 255, 0.8); /* white with 80% opacity */
+  z-index: -1; /* puts it behind your content */
+}
+
+  main, section, .content {
+  background-image: ("images/pic.avif");
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 1100px;
+  margin: 20px auto;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif;
-  font-weight: 700;
+  font-weight: 900;
   letter-spacing: -0.5px;
 }
 
@@ -9,12 +41,68 @@ h1, h2, h3, h4, h5, h6 {
 header{
     font-size: medium;
     font-family: sans-serif;
-    font-style: oblique;
-}
-body{
-    background-color: cornsilk;
-}
+    font-style: poppins;
+    font: weight 850px;
+
 .site-header{
     display:flex;
     padding: 20px;
+}
+/* ===== PRO MODERN HEADER - FOR ALL PAGES ===== */
+.main-header {
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: bold;
+}
+.logo-area img {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+.logo-area span {
+  font-family: 'Playfair Display', serif;
+  font-weight: 1000;
+  font-size: 22px;
+  color: #111;
+}
+.nav-links {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  font-size: 15px;
+  transition:0.2s;
+}
+.nav-links a:hover {
+  color: #2563eb;
+}
+.btn-post {
+  background: #2563eb !important;
+  color: white !important;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 600 !important;
 }
